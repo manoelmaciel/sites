@@ -1,0 +1,231 @@
+dom 13 abr 2025 23:22:12 
+
+maciel@worknote: front$ git clone gihub.com:manoelmaciel/sites
+Cloning into 'sites'...
+ssh: connect to host gihub.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+maciel@worknote: front$ gh repo clone gihub.com:manoelmaciel/sites
+invalid character '<' looking for beginning of value
+maciel@worknote: front$ gh repo clone manoelmaciel/sites
+Cloning into 'sites'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+maciel@worknote: front$ gh 
+Work seamlessly with GitHub from the command line.
+
+USAGE
+  gh <command> <subcommand> [flags]
+
+CORE COMMANDS
+  browse:     Open the repository in the browser
+  codespace:  Connect to and manage your codespaces
+  gist:       Manage gists
+  issue:      Manage issues
+  pr:         Manage pull requests
+  release:    Manage GitHub releases
+  repo:       Create, clone, fork, and view repositories
+
+ACTIONS COMMANDS
+  actions:    Learn about working with GitHub Actions
+  run:        View details about workflow runs
+  workflow:   View details about GitHub Actions workflows
+
+ADDITIONAL COMMANDS
+  alias:      Create command shortcuts
+  api:        Make an authenticated GitHub API request
+  auth:       Login, logout, and refresh your authentication
+  completion: Generate shell completion scripts
+  config:     Manage configuration for gh
+  extension:  Manage gh extensions
+  gpg-key:    Manage GPG keys
+  help:       Help about any command
+  secret:     Manage GitHub secrets
+  ssh-key:    Manage SSH keys
+
+EXTENSION COMMANDS
+  copilot
+
+FLAGS
+  --help      Show help for command
+  --version   Show gh version
+
+EXAMPLES
+  $ gh issue create
+  $ gh repo clone cli/cli
+  $ gh pr checkout 321
+
+ENVIRONMENT VARIABLES
+  See 'gh help environment' for the list of supported environment variables.
+
+LEARN MORE
+  Use 'gh <command> <subcommand> --help' for more information about a command.
+  Read the manual at https://cli.github.com/manual
+
+FEEDBACK
+  Open an issue using 'gh issue create -R github.com/cli/cli'
+
+maciel@worknote: front$ ls
+ 0           html  'Screenshot from 2025-03-06 18-54-15.pdf'
+ bootstrap   js    'Screenshot from 2025-03-06 18-54-15.png'
+ css         mdn    sites
+ hashtag     rec   'Untitled Folder'
+maciel@worknote: front$ cd sites
+maciel@worknote: sites$ ls
+0zero  1one  2two  docs  README.md
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	0zero/
+	1one/
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   0zero/code/css/style.css
+	new file:   0zero/code/flow.html~
+	new file:   0zero/code/index.html
+	new file:   0zero/code/index.html~
+	new file:   0zero/code/js/flow.html~
+	new file:   0zero/code/js/flow.js~
+	new file:   0zero/code/js/script.js
+	new file:   0zero/code/js/script.js~
+	new file:   0zero/code/js/test.js~
+	new file:   0zero/code/js/useless.js~
+	new file:   0zero/notes
+	new file:   0zero/resumo
+	new file:   1one/code/css/script.js~
+	new file:   1one/code/css/shell1~
+	new file:   1one/code/css/shell~
+	new file:   1one/code/css/style.css
+	new file:   1one/code/index.html
+	new file:   1one/code/index.html~
+	new file:   1one/code/js/script.js
+	new file:   1one/code/js/script.js~
+	new file:   1one/notes
+	new file:   docs/notes
+	new file:   docs/shell1
+
+maciel@worknote: sites$ git commit -m "Adicionando os sites já estudados"
+[main f17104c] Adicionando os sites já estudados
+ 23 files changed, 1977 insertions(+)
+ create mode 100644 0zero/code/css/style.css
+ create mode 100644 0zero/code/flow.html~
+ create mode 100644 0zero/code/index.html
+ create mode 100644 0zero/code/index.html~
+ create mode 100644 0zero/code/js/flow.html~
+ create mode 100644 0zero/code/js/flow.js~
+ create mode 100644 0zero/code/js/script.js
+ create mode 100644 0zero/code/js/script.js~
+ create mode 100644 0zero/code/js/test.js~
+ create mode 100644 0zero/code/js/useless.js~
+ create mode 100644 0zero/notes
+ create mode 100644 0zero/resumo
+ create mode 100644 1one/code/css/script.js~
+ create mode 100644 1one/code/css/shell1~
+ create mode 100644 1one/code/css/shell~
+ create mode 100644 1one/code/css/style.css
+ create mode 100644 1one/code/index.html
+ create mode 100644 1one/code/index.html~
+ create mode 100644 1one/code/js/script.js
+ create mode 100644 1one/code/js/script.js~
+ create mode 100644 1one/notes
+ create mode 100644 docs/notes
+ create mode 100644 docs/shell1
+maciel@worknote: sites$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git push origin main
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (32/32), 11.89 KiB | 2.38 MiB/s, done.
+Total 32 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/manoelmaciel/sites.git
+   c793a45..f17104c  main -> main
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   1one/notes
+
+no changes added to commit (use "git add" and/or "git commit -a")
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   1one/notes
+
+maciel@worknote: sites$ git commit -m "Mudanças no notes do site 1one"
+[main 301a762] Mudanças no notes do site 1one
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+maciel@worknote: sites$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 407 bytes | 407.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/manoelmaciel/sites.git
+   f17104c..301a762  main -> main
+maciel@worknote: sites$ git branch layout1
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git branch
+  layout1
+* main
+maciel@worknote: sites$ git checkout layout1
+Switched to branch 'layout1'
+maciel@worknote: sites$ git branch
+* layout1
+  main
+maciel@worknote: sites$ git status
+On branch layout1
+nothing to commit, working tree clean
+maciel@worknote: sites$ pwd 
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ 
+maciel@worknote: sites$ ls
+0zero  1one  2two  docs  README.md
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ date
+dom 13 abr 2025 23:21:29 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+
