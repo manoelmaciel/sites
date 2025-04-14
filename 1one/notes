@@ -1,0 +1,59 @@
+seg 07 abr 2025 18:35:57 
+
+  Criando uma Página Web Simples com HTML, CSS e JavaScript
+  https://blog.rocketseat.com.br/criando-uma-pagina-web-simples-com-html-css-e-javascript/
+  
+  Summary
+  
+    HTML (HyperText Markup Language)
+    
+    CSS (Cascading Style Sheets)
+
+    JavaScript
+
+
+    Como Elas Trabalham Juntas
+    
+      1. Estrutura;
+      2. Estilo;
+      3. Comportamento.
+      
+         Em resumo, o HTML fornece a estrutura, o CSS embeleza e organiza visualmente essa estrutura, 
+           e o JavaScript adiciona interatividade e dinamismo. 
+        
+    
+    Antes de colocar as mãos no código
+    
+        É importante conhecer as ferramentas necessárias e 
+          telas a disposição para colocar esse conhecimento em prática.
+        
+    
+      Editor de Código
+
+        xed 3.4.5
+
+      Navegador Web
+      
+        Midori 11.5 (64bit)
+      
+      Ferramentas de Controle de Versão
+
+        Git e Github
+
+      Softwares de Design
+      
+        Figma
+
+
+    Agora sim mãos ao código:
+    
+      Passo 1: Estruturando com HTML
+
+      Passo 2: Estilizando com CSS
+
+      Passo 3: Adicionando Interatividade com JavaScript
+
+
+  
+
+        

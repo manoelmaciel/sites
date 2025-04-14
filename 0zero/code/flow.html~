@@ -1,0 +1,24 @@
+/* script.js
+
+     Eloquente JavaScript 
+  
+         Third Edition
+                  
+         Marijn Haverbeke
+
+--------------------------------------------------------
+Capítulo 2 - Program Structure
+sáb 06 jul 2024 12:29:09 
+
+/* *** linear ( linha reta )                          */
+// Um comando executado seguido de outro
+
+  let theNumber = 0;
+  theNumber = Number(prompt("Pick a number"));
+  console.log("This number is, theNumber);
+  console.log("Your number is the square root of " +
+            theNumber * theNumber);
+  console.log("Your number is the cube root of " +
+            theNumber ** 3);
+
+

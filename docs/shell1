@@ -1,0 +1,219 @@
+qui 10 abr 2025 01:13:44 
+
+maciel@worknote: sites$ git init
+Initialized empty Git repository in /home/maciel/studys/front/sites/.git/
+maciel@worknote: sites$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	1one/
+
+nothing added to commit but untracked files present (use "git add" to track)
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   1one/code/css/script.js~
+	new file:   1one/code/css/shell1~
+	new file:   1one/code/css/shell~
+	new file:   1one/code/css/style.css
+	new file:   1one/code/index.html
+	new file:   1one/code/index.html~
+	new file:   1one/code/js/script.js
+	new file:   1one/code/js/script.js~
+	new file:   1one/notes
+
+maciel@worknote: sites$ git commit -m "Site one concluído";
+[master (root-commit) 7664337] Site one concluído
+ 9 files changed, 1163 insertions(+)
+ create mode 100644 1one/code/css/script.js~
+ create mode 100644 1one/code/css/shell1~
+ create mode 100644 1one/code/css/shell~
+ create mode 100644 1one/code/css/style.css
+ create mode 100644 1one/code/index.html
+ create mode 100644 1one/code/index.html~
+ create mode 100644 1one/code/js/script.js
+ create mode 100644 1one/code/js/script.js~
+ create mode 100644 1one/notes
+maciel@worknote: sites$ git status
+On branch master
+nothing to commit, working tree clean
+maciel@worknote: sites$ git log
+commit 766433704250baacfbf08e0edd133d08a1ce5774 (HEAD -> master)
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Wed Apr 9 20:21:40 2025 -0300
+
+    Site one concluído
+maciel@worknote: sites$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	0zero/
+
+nothing added to commit but untracked files present (use "git add" to track)
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   0zero/code/css/style.css
+	new file:   0zero/code/flow.html~
+	new file:   0zero/code/index.html
+	new file:   0zero/code/index.html~
+	new file:   0zero/code/js/flow.html~
+	new file:   0zero/code/js/flow.js~
+	new file:   0zero/code/js/script.js
+	new file:   0zero/code/js/script.js~
+	new file:   0zero/code/js/test.js~
+	new file:   0zero/code/js/useless.js~
+	new file:   0zero/notes
+	new file:   0zero/resumo
+
+maciel@worknote: sites$ git commit -m "incluído o modelo inicial";
+[master 5bde98b] incluído o modelo inicial
+ 12 files changed, 592 insertions(+)
+ create mode 100644 0zero/code/css/style.css
+ create mode 100644 0zero/code/flow.html~
+ create mode 100644 0zero/code/index.html
+ create mode 100644 0zero/code/index.html~
+ create mode 100644 0zero/code/js/flow.html~
+ create mode 100644 0zero/code/js/flow.js~
+ create mode 100644 0zero/code/js/script.js
+ create mode 100644 0zero/code/js/script.js~
+ create mode 100644 0zero/code/js/test.js~
+ create mode 100644 0zero/code/js/useless.js~
+ create mode 100644 0zero/notes
+ create mode 100644 0zero/resumo
+maciel@worknote: sites$ git status
+On branch master
+nothing to commit, working tree clean
+maciel@worknote: sites$ git log
+commit 5bde98b70e719925b4b6aa53134a3ad745a00850 (HEAD -> master)
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Wed Apr 9 20:29:02 2025 -0300
+
+    incluído o modelo inicial
+
+commit 766433704250baacfbf08e0edd133d08a1ce5774
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Wed Apr 9 20:21:40 2025 -0300
+
+    Site one concluído
+maciel@worknote: sites$ 
+maciel@worknote: sites$ git status
+On branch master
+nothing to commit, working tree clean
+maciel@worknote: sites$ 
+maciel@worknote: sites$ git log
+commit 5bde98b70e719925b4b6aa53134a3ad745a00850 (HEAD -> master)
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Wed Apr 9 20:29:02 2025 -0300
+
+    incluído o modelo inicial
+
+commit 766433704250baacfbf08e0edd133d08a1ce5774
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Wed Apr 9 20:21:40 2025 -0300
+
+    Site one concluído
+maciel@worknote: sites$ 
+maciel@worknote: sites$ date
+qua 09 abr 2025 21:56:37 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ git config --list
+init.defaultbranch=master
+user.name=Manoel Braz Maciel
+user.email=manoelbraz.maciel@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ date
+qua 09 abr 2025 21:58:23 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ ls
+0zero  1one  2two
+maciel@worknote: sites$ git config --global core.editot xed
+maciel@worknote: sites$ git config --list
+init.defaultbranch=master
+user.name=Manoel Braz Maciel
+user.email=manoelbraz.maciel@gmail.com
+core.editot=xed
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+maciel@worknote: sites$ git config --global core.editor xed
+maciel@worknote: sites$ git config --list
+init.defaultbranch=master
+user.name=Manoel Braz Maciel
+user.email=manoelbraz.maciel@gmail.com
+core.editot=xed
+core.editor=xed
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+maciel@worknote: sites$ git config --global core.editot 
+xed
+maciel@worknote: sites$ git config --global core.editot ""
+maciel@worknote: sites$ git config --global core.editot 
+
+maciel@worknote: sites$ git config --list
+init.defaultbranch=master
+user.name=Manoel Braz Maciel
+user.email=manoelbraz.maciel@gmail.com
+core.editot=
+core.editor=xed
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ date
+qua 09 abr 2025 22:59:20 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ git config --global user.name "manoelmaciel"
+maciel@worknote: sites$ 
+maciel@worknote: sites$ git config --list
+init.defaultbranch=master
+user.name=manoelmaciel
+user.email=manoelbraz.maciel@gmail.com
+core.editor=xed
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+maciel@worknote: sites$ 
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ man git
+maciel@worknote: sites$ git tutorial
+git: 'tutorial' is not a git command. See 'git --help'.
+maciel@worknote: sites$ git --help tutorial
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ ls
+0zero  1one  2two
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ date
+qui 10 abr 2025 01:12:30 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+
