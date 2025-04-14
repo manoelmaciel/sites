@@ -1,0 +1,758 @@
+seg 14 abr 2025 10:53:23 
+
+maciel@worknote: sites$ date
+seg 14 abr 2025 09:10:24 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ ls
+0zero  1rocketseat  2two  docs  notes  README.md
+maciel@worknote: sites$ git status
+On branch layout1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    1one/code/css/script.js~
+	deleted:    1one/code/css/shell1~
+	deleted:    1one/code/css/shell~
+	deleted:    1one/code/css/style.css
+	deleted:    1one/code/index.html
+	deleted:    1one/code/index.html~
+	deleted:    1one/code/js/script.js
+	deleted:    1one/code/js/script.js~
+	deleted:    1one/notes
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	1rocketseat/
+	docs/shell2
+	notes
+
+no changes added to commit (use "git add" and/or "git commit -a")
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git commit -m "Mundando o nome da pasta 1one ... Para rocketseat!"
+[layout1 28516a4] Mundando o nome da pasta 1one ... Para rocketseat!
+ 11 files changed, 237 insertions(+)
+ rename {1one => 1rocketseat}/code/css/script.js~ (100%)
+ rename {1one => 1rocketseat}/code/css/shell1~ (100%)
+ rename {1one => 1rocketseat}/code/css/shell~ (100%)
+ rename {1one => 1rocketseat}/code/css/style.css (100%)
+ rename {1one => 1rocketseat}/code/index.html (100%)
+ rename {1one => 1rocketseat}/code/index.html~ (100%)
+ rename {1one => 1rocketseat}/code/js/script.js (100%)
+ rename {1one => 1rocketseat}/code/js/script.js~ (100%)
+ rename {1one => 1rocketseat}/notes (93%)
+ create mode 100644 docs/shell2
+ create mode 100644 notes
+maciel@worknote: sites$ git status
+On branch layout1
+nothing to commit, working tree clean
+maciel@worknote: sites$ git status
+On branch layout1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    1rocketseat/code/css/script.js~
+	deleted:    1rocketseat/code/css/shell1~
+	deleted:    1rocketseat/code/css/shell~
+	modified:   1rocketseat/code/css/style.css
+	modified:   1rocketseat/code/index.html
+	deleted:    1rocketseat/code/index.html~
+	modified:   1rocketseat/notes
+	modified:   notes
+
+no changes added to commit (use "git add" and/or "git commit -a")
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git commit -m "Rocketseat incrementado com layout1 ... Concluído!"
+[layout1 efa0696] Rocketseat incrementado com layout1 ... Concluído!
+ 8 files changed, 95 insertions(+), 1060 deletions(-)
+ delete mode 100644 1rocketseat/code/css/script.js~
+ delete mode 100644 1rocketseat/code/css/shell1~
+ delete mode 100644 1rocketseat/code/css/shell~
+ delete mode 100644 1rocketseat/code/index.html~
+maciel@worknote: sites$ git status
+On branch layout1
+nothing to commit, working tree clean
+maciel@worknote: sites$ git status
+On branch layout1
+Your branch is up to date with 'origin/layout1'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git branch
+* layout1
+  main
+maciel@worknote: sites$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git log
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b (HEAD -> main, origin/main, origin/HEAD)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+maciel@worknote: sites$ git branch
+  layout1
+* main
+maciel@worknote: sites$ git checkout layout1
+Switched to branch 'layout1'
+Your branch is up to date with 'origin/layout1'.
+maciel@worknote: sites$ git status
+On branch layout1
+Your branch is up to date with 'origin/layout1'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git log
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (HEAD -> layout1, origin/layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b (origin/main, origin/HEAD, main)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+maciel@worknote: sites$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git log
+commit 4c9fecbd6e2b9149da1270e116a43d038e1d668b (HEAD -> main, origin/main, origin/HEAD)
+Merge: 301a762 efa0696
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:48:44 2025 -0300
+
+    Merge pull request #1 from manoelmaciel/layout1
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+maciel@worknote: sites$ ls
+0zero  1rocketseat  2two  docs  notes  README.md
+maciel@worknote: sites$ 
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ date
+seg 14 abr 2025 10:52:15 -03
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+maciel@worknote: sites$ 
+
