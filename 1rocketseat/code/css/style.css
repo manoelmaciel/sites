@@ -15,14 +15,14 @@ body {
 }
 
 header, nav, main, aside, footer {
+	margin: 15px;
+	height: 50px;
+	background-color: #a1a1a1;
 	display: flex;
 	flex-direction: column;
-	margin: 15px;
 	flex: 1 1 100vw;
 	justify-content: center; 
 	align-items: center;
-	height: 50px;
-	background-color: #a1a1a1;
 }
 
 header {
@@ -33,23 +33,30 @@ header {
   
   
 main {
-	align-items: center;
-	height: 200px;
+	height: 220px;
+
 	& p {
     color: #666;
 	}
 
 	& button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	  margin: 5px;
+	  background-color: #007bff;
+	  color: white;
+	  padding: 10px 20px;
+	  border: none;
+	  border-radius: 5px;
+	  cursor: pointer;
 	}
 
 	& button:hover {
     background-color: #0056b3;
+	}
+
+	& hr {
+		margin: 5px;
+		height: 1px;
+		width: 800px;
 	}
 
 }
