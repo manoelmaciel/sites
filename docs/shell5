@@ -1,0 +1,66 @@
+ter 15 abr 2025 16:07:02 
+
+  O site do Rocketseat ...
+  Incrementado com o Layout2!
+  
+maciel@worknote: sites$ date
+ter 15 abr 2025 10:35:05 -03
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ ls
+0zero  1rocketseat  2two  docs  notes  README.md
+
+maciel@worknote: sites$ git status
+On branch layout2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/shell4
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+maciel@worknote: sites$ git status
+On branch layout2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   1rocketseat/code/css/style.css
+	modified:   1rocketseat/code/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/shell4
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maciel@worknote: sites$ git add .
+
+maciel@worknote: sites$ git status
+On branch layout2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   1rocketseat/code/css/style.css
+	modified:   1rocketseat/code/index.html
+	new file:   docs/shell4
+
+maciel@worknote: sites$ git commit -m "Rocketseat incrementado com layout2 ... Concluído!"
+[layout2 b7a0343] Rocketseat incrementado com layout2 ... Concluído!
+ 3 files changed, 160 insertions(+), 16 deletions(-)
+ create mode 100644 docs/shell4
+
+maciel@worknote: sites$ git status
+On branch layout2
+nothing to commit, working tree clean
+maciel@worknote: sites$ git push origin main
+Everything up-to-date
+
+maciel@worknote: sites$ git merge origin main
+Already up to date.
+maciel@worknote: sites$ ls
+0zero  1rocketseat  2two  docs  notes  README.md
+
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ date
+ter 15 abr 2025 16:06:24 -03
+maciel@worknote: sites$ 
+  
