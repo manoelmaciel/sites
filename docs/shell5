@@ -1,0 +1,256 @@
+qua 16 abr 2025 10:05:18 
+
+  Depois de tudo ...
+  Tentando aprender cada vez mais!
+  
+maciel@worknote: sites$ date
+qua 16 abr 2025 09:19:38 -03
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ ls
+0zero  1rocketseat  2two  docs  notes  README.md
+maciel@worknote: sites$ git status
+On branch layout2
+Your branch is up to date with 'origin/layout2'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   1rocketseat/code/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/shell5
+
+no changes added to commit (use "git add" and/or "git commit -a")
+maciel@worknote: sites$ git add .
+maciel@worknote: sites$ git status
+On branch layout2
+Your branch is up to date with 'origin/layout2'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   1rocketseat/code/index.html
+	new file:   docs/shell5
+
+maciel@worknote: sites$ git commit -m "Layout 2 modificado ... E o sheel5!"
+[layout2 8d8ac48] Layout 2 modificado ... E o sheel5!
+ 2 files changed, 67 insertions(+), 1 deletion(-)
+ create mode 100644 docs/shell5
+maciel@worknote: sites$ git push origin main
+Everything up-to-date
+maciel@worknote: sites$ git status
+On branch layout2
+Your branch is ahead of 'origin/layout2' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git log
+commit 8d8ac480f5ae7478682408ae1cf292e4b0b9795b (HEAD -> layout2)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Wed Apr 16 09:23:30 2025 -0300
+
+    Layout 2 modificado ... E o sheel5!
+
+commit b7a034381180dc0b0b70e3549af9fe089046d562 (origin/layout2)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Tue Apr 15 14:10:43 2025 -0300
+
+    Rocketseat incrementado com layout2 ... Concluído!
+
+commit 9a5c594e48413aa4edf3623ede5bf387a6db3fd1
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Tue Apr 15 10:30:27 2025 -0300
+
+    Algumas modificações ... Ainda com o Layout 1!
+
+commit ce88f0598f62da1e622317590d2b2b490c3ca0a4
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:56:37 2025 -0300
+
+    Shell3 incluído ... Rocketseat incrementado com layout1!
+
+commit 4c9fecbd6e2b9149da1270e116a43d038e1d668b
+Merge: 301a762 efa0696
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:48:44 2025 -0300
+
+    Merge pull request #1 from manoelmaciel/layout1
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (origin/layout1, layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+maciel@worknote: sites$ git status
+On branch layout2
+Your branch is ahead of 'origin/layout2' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.28 KiB | 1.28 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/manoelmaciel/sites.git
+   b7a0343..8d8ac48  layout2 -> layout2
+maciel@worknote: sites$ git branch
+  layout1
+* layout2
+  main
+maciel@worknote: sites$ git checkuot main
+git: 'checkuot' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+maciel@worknote: sites$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+maciel@worknote: sites$ git branch
+  layout1
+  layout2
+* main
+maciel@worknote: sites$ git branch -D layout1
+Deleted branch layout1 (was efa0696).
+maciel@worknote: sites$ git branch -D layout2
+Deleted branch layout2 (was 8d8ac48).
+maciel@worknote: sites$ git branch
+* main
+maciel@worknote: sites$ git push
+To https://github.com/manoelmaciel/sites.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/manoelmaciel/sites.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+maciel@worknote: sites$ git push origin main
+To https://github.com/manoelmaciel/sites.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/manoelmaciel/sites.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ git branch
+* main
+maciel@worknote: sites$ git log
+commit 61312f0da9a69e29082d5f3cca42795c17024995 (HEAD -> main, origin/main, origin/HEAD)
+Merge: ce88f05 b7a0343
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Tue Apr 15 14:17:59 2025 -0300
+
+    Merge pull request #2 from manoelmaciel/layout2
+    
+    Layout2
+    A página web do Rocketseat incrementado com o Layout2.
+    Claro, muito modificado. Mas, bom o bastante. Por enquanto!
+
+commit b7a034381180dc0b0b70e3549af9fe089046d562
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Tue Apr 15 14:10:43 2025 -0300
+
+    Rocketseat incrementado com layout2 ... Concluído!
+
+commit 9a5c594e48413aa4edf3623ede5bf387a6db3fd1
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Tue Apr 15 10:30:27 2025 -0300
+
+    Algumas modificações ... Ainda com o Layout 1!
+
+commit ce88f0598f62da1e622317590d2b2b490c3ca0a4
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:56:37 2025 -0300
+
+    Shell3 incluído ... Rocketseat incrementado com layout1!
+
+commit 4c9fecbd6e2b9149da1270e116a43d038e1d668b
+Merge: 301a762 efa0696
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:48:44 2025 -0300
+
+    Merge pull request #1 from manoelmaciel/layout1
+    
+    Layout1
+    O site web do Rocketseat inclementado com o layout1. Claro, ligieiramente modificado. E bom o bastante!
+
+commit efa0696752ac2ccf28aa030213f8af6ab9b18b42 (origin/layout1)
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 10:36:12 2025 -0300
+
+    Rocketseat incrementado com layout1 ... Concluído!
+
+commit 28516a45335b8040f62517875ef6abc0a36b7257
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Mon Apr 14 09:18:25 2025 -0300
+
+    Mundando o nome da pasta 1one ... Para rocketseat!
+
+commit 301a762018e5b9f0d1759c50844dfb070281ff4b
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:14:06 2025 -0300
+
+    Mudanças no notes do site 1one
+
+commit f17104cf5789985ee6e46b6530958bd454d69991
+Author: manoelmaciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 23:06:13 2025 -0300
+
+    Adicionando os sites já estudados
+
+commit c793a452450ffdd18a884a7018e72576ed6a99e7
+Author: Manoel Braz Maciel <manoelbraz.maciel@gmail.com>
+Date:   Sun Apr 13 21:39:45 2025 -0300
+
+    Initial commit
+maciel@worknote: sites$ ls
+0zero  1rocketseat  2two  docs  notes  README.md
+maciel@worknote: sites$ pwd
+/home/maciel/studys/front/sites
+maciel@worknote: sites$ date
+qua 16 abr 2025 10:04:18 -03
+maciel@worknote: sites$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+maciel@worknote: sites$ 
+  
