@@ -1,0 +1,56 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;        
+}
+
+#page {
+  background-color: blue;
+}
+
+/* TEST .. .content {
+  background-color: red;
+} Testando a hierarquia das   TAGS */
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  flex: 1 1 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1a1a1;
+}
+
+header, nav, main, aside, footer {
+  display: flex;
+  margin: 3px;
+  flex: 1 1 100vw;
+  background-color: #a1a1a1;
+} 
+
+main {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  color: #fff;
+}
+
+.container {
+  background-color: #000;
+  padding: 25px;
+  width: 750px;
+  border-radius: 10px;
+  color: white;
+}
+
+
